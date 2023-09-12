@@ -22,7 +22,7 @@ import ProductDetails from './Products/ProductDetails';
 
 
 
-function App() {
+function App() {   
   return (
     <div className="App">
       <Router>  
