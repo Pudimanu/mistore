@@ -1,0 +1,402 @@
+
+.nav{
+  z-index: 1000;
+  background-color: white;
+  padding: 1vmax;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(43, 43, 43, 0.137);
+}
+
+
+.logo{
+  background-color: orangered;
+  width: 58px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  right: 2vmax;
+}
+
+#logoImage{
+  transition:all 0.2s;
+  
+  transform: translateX(-58px);
+}
+
+#logoImage:hover{
+
+  transform: translateX(0);
+}
+
+.navlinks{
+  color: rgb(59, 59, 59);
+  text-decoration: none;
+  margin: 1vmax 1.2vmax;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 1.1vmax;
+ 
+}
+
+.navlinks:hover{
+  color: orangered;
+  text-decoration: none;
+}
+
+.searchbox{
+  position: relative;
+ left:5vmax;
+}
+
+.searchbox >input{
+  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.76);
+  width: 15vmax;
+  font-size: 1.1vmax;
+  outline: none;
+  color:rgb(61, 61, 61);
+  font-weight: 100;
+  
+}
+
+
+.searchbox > svg{
+  fill: rgb(61, 61, 61);
+}
+
+.offersSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vmax;
+}
+
+.offersSection   img{
+  margin: 0 1vmax;
+  transition: all 0.5s;
+}
+
+.offersSection   img:hover{
+  box-shadow: 6px 6px 15px rgba(53, 53, 53, 0.363);
+}
+
+.heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.heading div{
+  background-color: rgba(39, 39, 39, 0.274);
+  height: 1px;
+  width: 30vw;
+}
+
+.heading p{
+  margin: 3vmax;
+  color: rgb(77, 77, 77);
+  font-size: 2.5vmax;
+  font-family:   Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 100;
+}
+
+.starProduct{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 1vmax auto;
+}
+
+.starProduct>div:last-child{
+  display: flex;
+  flex-wrap: wrap;
+  width: 46%;
+}
+
+.starProduct img{
+  transition: all 0.5s;
+}
+
+.starProduct img:hover{
+  box-shadow: 6px 6px 15px rgba(53, 53, 53, 0.363);
+}
+.HotAccessoriesMenu{
+  display: flex;
+  justify-content: center;
+}
+
+.HotAccesso {
+  text-align: center;
+}
+.HotAccessoriesLink{
+  text-decoration: none;
+  color: rgb(94, 94, 94);
+  margin: 1vmax;
+  padding: 0.5vmax 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.HotAccessoriesLink:hover{
+  text-decoration: none;
+  color: orangered;
+  border-bottom: 1px solid orangered;
+} 
+
+.HotAccessories{
+  display: flex;
+  width: 90vw;
+  margin: auto;
+  padding-top: 23px;
+}
+
+.HotAccessories > div:first-child > img{
+  cursor: pointer;
+  transition: all 0.5s;
+  width: 22vw;
+}
+
+.HotAccessories > div:first-child > img:hover{
+  transform: translateY(-0.4vmax);
+  box-shadow: 0px 6px 15px rgba(53, 53, 53, 0.363);
+
+}
+
+.HotAccessories > div:last-child{
+  display: flex;
+  flex-wrap: wrap;
+}
+.HotItemCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  background-color: white;
+  width: 31%;
+  margin:  0.7vmax;
+  transition: all 0.5s;
+  cursor: pointer;
+
+}
+
+.HotItemCard:hover{
+  transform: translateY(-0.4vmax);
+  box-shadow: 0px 6px 15px rgba(53, 53, 53, 0.363);
+
+}
+
+
+.HotItemCard > img{
+  width: 70%;
+
+}
+
+
+.HotItemCard > p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(85, 83, 83);
+
+}
+
+.HotItemCard > span{
+  margin: -1vmax 0 1vmax 0;
+  color: orangered;
+
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.react-tabs__tab-list{width:100%; border: 0px;}
+
+
+.ProductReviews{
+  display: flex;
+  width: 90vw;
+  margin: auto;
+  justify-content: center;
+}
+
+.ProductReviewCard{
+  margin: 0.5vmax;
+  background-color: white;
+  padding-bottom: 2vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.ProductReviewCard:hover{
+  transform: translateY(-0.4vmax);
+  box-shadow: 0px 6px 15px rgba(53, 53, 53, 0.363);
+
+}
+
+.ProductReviewCard h5{
+  margin: 2vmax 0 0.5vmax 2vmax;
+  color: rgb(94, 94, 94);
+}
+
+.ProductReviewCard span{
+  margin: 0 2vmax;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1vmax;
+  color: rgb(94, 94, 94);
+}
+
+.ProductReviewCard b{
+  font-size: 1vmax;
+  color: orangered;
+}
+
+.videos{
+  display: flex;
+  width: 90vw;
+  margin: auto;
+}
+
+
+.videoCard{
+  width: 30vmax;
+  height:48vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  margin: 0.5vmax;
+  cursor: pointer;
+  
+  }
+  
+  .videoCard > a {
+  padding: 2.5vmax;
+  transition: all 0.5s;
+  border: none;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.096);
+  color: white;
+  }
+  .videoCard > a > svg {
+  fill: rgb(255, 255, 255);
+  }
+  .videoCard:hover a {
+  background-color: rgba(255, 255, 255, 0.671);
+  }
+  
+  .videoCard p {
+      color: white;
+      margin: 1vmax;
+  }
+  .App {
+    padding-bottom: 246px;
+}
+  .footer-block{background:#ccc; padding: 100px 0px; display: flex; justify-content: center; align-items: center;    position: fixed;
+    width: 100%;display: none;
+    bottom: 0px;}
+  .footer-block h2{color: #000;}
+
+  .search-block{background:#ccc; padding: 100px 0px; text-align:  center;  }
+  .search-block h2{color: #fff;}
+
+  table {
+    font-family: arial, sans-serif;
+    display: table;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    z-index: 9;
+    background: #fff;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+  }
+  td img {
+    width: 100px;
+}
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .count-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+}
+.count-block h1{padding: 10px }
+.count-block .size{padding: 10px }
+.count-block .color{padding: 10px }
+.count-block button{margin: 0px 10px}
+
+.register {
+  text-align: center;
+  padding: 30px 0px;
+}
+.register h1{padding-bottom: 40px;}
+.register input{width: 20%;height: 40px;padding: 10px}
+.register button[type="submit"]{background: #ff4500; color: #ffff; font-size: 19px; border: 0px;padding:5px 10px;}
+
+
+.productsection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vmax;
+  flex-wrap: wrap;
+}
+.productsection .product-box{
+  width: 22%;
+  position: relative;
+  margin: 1vmax 1vmax;
+}
+.productsection .product-box a{text-decoration: none;color: #000;}
+.productsection .product-box .stock{
+  position: absolute;
+  top: 0px;
+  right: 40%;
+  background: #000;
+  color: #fff;
+  padding: 5px;
+}
+
+.productsection   img{
+  transition: all 0.5s;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    height: 240px;
+    padding-bottom: 20px;
+
+}
+
+
+.productsection   img:hover{
+  box-shadow: 6px 6px 15px rgba(53, 53, 53, 0.363);
+}
+
+.cartsection{
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  padding: 1vmax;
+  flex-wrap: wrap;
+}
+.cartsection .leftslider{width: 30%; float: left;}
+.cartsection h1{color: #ff4500;padding: 20px 0px;}
+.cartsection h5{font-size:35px;padding: 0px 0px; font-weight: 700;}
+.cartsection h5 strike{font-size:25px;padding: 0px 10px;color: #635f5f;font-weight: 300;}
+.cartsection span.instock{color: #0f9d58;padding: 10px 0px;}
+.cartsection span.outstock{color: #ff4500;padding: 10px 0px;}
+.cartsection .leftslider img {width: 100%;height: 600px;}
+.cartsection .product-box{
+  width: 40%;
+  position: relative;
+  margin: 1vmax 1vmax;
+}
+.cartsection button[type="submit"]{width: 50%;height: 50px;background: #ff4500;color: #fff;font-size: 20px;font-weight: 700;border: 0px;  margin: 10px 0px;}
