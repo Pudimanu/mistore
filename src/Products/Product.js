@@ -31,7 +31,7 @@ function Product() {
                         product.products.map((item) => (
                             <>
                                 <div className="product-box">
-                                    <Link to={`/products/${item.id}`}>                                    
+                                    <Link to={`/products/${item.id}/${slugify(item.title)}`}>                                    
                                         <span className="stock">{item.stock} In Stock </span>
                                         <img src={item.images[1]} alt={item.title} />
                                         <h4 style={{ textAlign: "center" }}>{item.title}</h4>

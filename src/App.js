@@ -18,11 +18,12 @@ import Footer from './Footer';
 import Protected from './components/Home/Protected';
 import Product from './Products/Product';
 import ProductDetails from './Products/ProductDetails';
+import Cart from './Products/Cart';
 
 
 
 
-function App() {   
+function App() {
   return (
     <div className="App">
       <Router>  
@@ -41,7 +42,8 @@ function App() {
           <Route path='/login' element={<Login/>} />
           <Route path='/register' element={<Register/>} />
           <Route path='/products' element={<Product/>} />
-          <Route path='/products/:id' element={<ProductDetails/>} />
+          <Route path='/products/:id/:slug' element={<ProductDetails/>} />
+          <Route path='/cart' element={<Cart/>} />
           <Route path='/*' element={<Page404/>} />              
                 
         </Routes>

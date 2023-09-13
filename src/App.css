@@ -388,15 +388,30 @@
   flex-wrap: wrap;
 }
 .cartsection .leftslider{width: 30%; float: left;}
-.cartsection h1{color: #ff4500;padding: 20px 0px;}
+.cartsection h1{color: #5b5553;padding:10px 0px 0px 0px;font-size: 26px;font-weight: 400;}
 .cartsection h5{font-size:35px;padding: 0px 0px; font-weight: 700;}
 .cartsection h5 strike{font-size:25px;padding: 0px 10px;color: #635f5f;font-weight: 300;}
 .cartsection span.instock{color: #0f9d58;padding: 10px 0px;}
 .cartsection span.outstock{color: #ff4500;padding: 10px 0px;}
-.cartsection .leftslider img {width: 100%;height: 600px;}
-.cartsection .product-box{
-  width: 40%;
-  position: relative;
-  margin: 1vmax 1vmax;
-}
-.cartsection button[type="submit"]{width: 50%;height: 50px;background: #ff4500;color: #fff;font-size: 20px;font-weight: 700;border: 0px;  margin: 10px 0px;}
+.cartsection .leftslider img {width: 100%;height: 100%;}
+.cartsection .product-box{width: 40%;position: relative; margin: 1vmax 1vmax;padding-left: 40px;}
+.cartsection .product-box p a{color:#ff4500}
+.cartsection button[type="submit"]{width: 50%;height: 50px;background: #ff4500;color: #fff;font-size: 20px;font-weight: 500;border: 0px;  margin: 10px 0px;}
+.cartsection .size{padding: 10px 0px;}
+.cartsection .size input[type="radio"]{    width: 40px;height: 40px;}
+.cartsection .size label{ position: relative;top: -14px;left: -40px;width: 40px;text-align: center;}
+.cartsection .quantity{padding: 20px 0px;}
+.cartsection .quantity button{width: 35px;border: 2px solid #ccc; font-size: 20px;;}
+.cartsection .quantity input[type="text"]{width: 50px; height: 35px;border: 1px solid #ccc;    position: relative;top: -2px;text-align: center;}
+.cartsection .quantity input[type="text"]:focus,.cartsection .quantity input[type="text"]:focus-visible{border: 1px solid #ccc;}
+
+.cart-block{  padding: 1vmax;width: 70vmax;margin: 0px auto;}
+.cart-block .left{width: 70%; float: left;     text-align: center;}
+.cart-block .innerleft{display: flex; justify-content: center; align-items: center; border: 1px solid #ccc;margin-bottom: 20px;padding: 10px; position: relative; }
+.cart-block .innerleft .remove{position: absolute; top: 0px; right: 0px; padding: 0px 10px 4px;  background: #000;  color: #fff;  font-size: 11px;  cursor: pointer;}
+.cart-block .innerleft b{text-align: center;    display: block;}
+.cart-block .innerleft p{padding: 15px;}
+.cart-block .innerleft .pname{    width: 35%;}
+.cart-block .innerleft .dicount{    width: 15%;}
+.cart-block .innerleft .quantity{    width: 15%;}
+.cart-block .left img{width: 100px;}
