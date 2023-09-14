@@ -4,7 +4,7 @@ import Nav from "../components/Home/Nav";
 function Cart() {
 
     let cartInfo = JSON.parse(localStorage.getItem("Cart-Info"));
-    //console.log(cartInfo)
+    //console.log(cartInfo) 
 
 
 
