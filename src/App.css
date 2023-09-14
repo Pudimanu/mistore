@@ -405,7 +405,9 @@
 .cartsection .quantity input[type="text"]{width: 50px; height: 35px;border: 1px solid #ccc;    position: relative;top: -2px;text-align: center;}
 .cartsection .quantity input[type="text"]:focus,.cartsection .quantity input[type="text"]:focus-visible{border: 1px solid #ccc;}
 
-.cart-block{  padding: 1vmax;width: 70vmax;margin: 0px auto;}
+.cart-block{  padding: 1vmax;width: 70vmax;margin: 0px auto;    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;}
 .cart-block .left{width: 70%; float: left;     text-align: center;}
 .cart-block .innerleft{display: flex; justify-content: center; align-items: center; border: 1px solid #ccc;margin-bottom: 20px;padding: 10px; position: relative; }
 .cart-block .innerleft .remove{position: absolute; top: 0px; right: 0px; padding: 0px 10px 4px;  background: #000;  color: #fff;  font-size: 11px;  cursor: pointer;}
@@ -415,3 +417,24 @@
 .cart-block .innerleft .dicount{    width: 15%;}
 .cart-block .innerleft .quantity{    width: 15%;}
 .cart-block .left img{width: 100px;}
+.cart-block .left.quantity button{width: 35px;border: 2px solid #ccc; font-size: 20px;;}
+.cart-block .left .quantity input[type="text"]{width: 50px; height: 35px;border: 1px solid #ccc;    position: relative;top: -2px;text-align: center;}
+.cart-block .left .quantity input[type="text"]:focus,.cartsection .quantity input[type="text"]:focus-visible{border: 1px solid #ccc;}
+
+
+.cart-block .cartsummary{width: 28%; float: right; padding: 0px 20px 0px 50px;; margin-left: 20px;text-align: center;}
+.cart-block .cartsummary h4{font-size: 20px; font-weight: 400;padding-bottom: 20px;border-bottom: 1px solid #ccc;margin-bottom: 20px;}
+.cart-block .cartsummary h6{width:100%; float: left;}
+.cart-block .cartsummary h6 span{display: inline-block;float: left;}
+.cart-block .cartsummary h6 b{display: inline-block;float: right;}
+.cart-block .cartsummary h5{width:100%; float: left; margin-top: 100px;padding-bottom: 26px;border-bottom: 1px solid #ccc;}
+.cart-block .cartsummary h5 span{display: inline-block;float: left;}
+.cart-block .cartsummary h5 b{display: inline-block;float: right;}
+.cart-block .cartsummary a{padding: 10px;text-align: center;text-decoration: none;border: 1px solid #ff4500;font-size: 15px; display: inline-block; margin: 30px 0px 20px;
+  width: 100%; color: #ff4500;}
+.cart-block .cartsummary button{padding: 10px;text-align: center;text-decoration: none;border: 1px solid #fff;font-size: 15px; display: inline-block; margin: 0px 0px;
+  width: 100%; color: #fff; background: #000;}
+
+
+
+

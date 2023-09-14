@@ -1,16 +1,31 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Nav from "../components/Home/Nav";
+import { Link } from "react-router-dom";
 
 function Cart() {
 
     let cartInfo = JSON.parse(localStorage.getItem("Cart-Info"));
-    //console.log(cartInfo) 
+    //console.log(cartInfo)
+    const [subtotal, setSubtotal] = useState(0);
 
+
+    useEffect(() => {
+        // Calculate subtotal when cartInfo changes
+        if (cartInfo && cartInfo.length > 0) {
+          const calculatedSubtotal = cartInfo.reduce((total, item) => {
+            return total + item.Price * item.count;
+          }, 0);
+    
+          setSubtotal(calculatedSubtotal);
+        } else {
+          setSubtotal(0);
+        }
+      }, [cartInfo]);
+    
 
 
     function RemoveCart(index){        
-        cartInfo.splice(index, 1)
-       
+        cartInfo.splice(index, 1)       
         localStorage.setItem("Cart-Info",JSON.stringify(cartInfo))
     }
 
@@ -47,6 +62,13 @@ function Cart() {
                         ) : null
                     }
 
+                </div>
+                <div className="cartsummary">
+                    <h4>Cart Summary</h4>
+                    <h6><span>Subtotal</span><b>{subtotal}</b></h6>
+                    <h5><span>Total</span><b>{subtotal}</b></h5>
+                    <Link to="/products">CONTINUE SHOPPING</Link>
+                    <button type="submit">CHECKOUT</button>
                 </div>
             </div>
 
